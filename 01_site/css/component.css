@@ -1,0 +1,82 @@
+.grid {
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 42px 22px;
+	background: #304352;
+	color: #ed4e6e;
+}
+
+.grid figcaption h1 {
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	margin: 0;
+	padding-bottom: 12px;
+	color: #fff;
+}
+
+.grid figcaption small {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #e44c65;
+	color: #fff;
+}
+
+.cs-style-4 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+@media (max-width: 980px) {
+	.grid figcaption h1 {
+		font-size: 1rem;
+		line-height: 1.6rem;
+	}
+	.grid figcaption {
+		padding: 22px 18px;
+	}
+}
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
